@@ -150,10 +150,34 @@ const sendFogorEmail = (req, res) => {
 
 }
 
+
+const getAllUsers = async (req, res) => {
+    const user = await isAuth(req);
+
+    if (!user) {
+        return res.status(401).json({ msg: "Please login or register to access this service", status: "fail" });
+    }
+
+    if (user.role != "admin") {
+        return res.status(401).json({ msg: "Please login or register to access this service", status: "fail" });
+    }
+
+    let query = `SELECT * FROM lib_user`;
+
+    client.query(query)
+        .then((result) => {
+            res.status(200).json({ msg: "Users retrieved succesfully", data: result.rows, status: "pass" })
+        }).catch((err) => {
+            err.stack
+            return res.status(501).json({ msg: "Users retrieval failed", status: "fail" });
+        })
+}
+
 module.exports = {
     createUser,
     loginUser,
     userDetails,
     updateUser,
-    sendFogorEmail
+    sendFogorEmail,
+    getAllUsers
 }

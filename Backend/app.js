@@ -36,6 +36,9 @@ app.get("/library/home", (req, res) => {
 app.get("/library/addbook", (req, res) => {
     res.sendFile(__dirname + "/public/ADMIN/addBook.html")
 })
+app.get("/library/getusers", (req, res) => {
+    res.sendFile(__dirname + "/public/ADMIN/users.html")
+})
 app.get("/library/editbook", (req, res) => {
     res.sendFile(__dirname + "/public/ADMIN/editBook.html")
 })

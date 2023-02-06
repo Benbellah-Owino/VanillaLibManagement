@@ -20,3 +20,7 @@ myPage.addEventListener("click", () => {
     window.open("http://localhost:3000/library/myPage");
 })
 
+users.addEventListener("click", () => {
+    window.open("http://localhost:3000/library/getusers");
+})
+
