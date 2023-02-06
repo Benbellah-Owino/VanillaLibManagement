@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/home.css">
+    <script src="https://kit.fontawesome.com/42b8efcb5a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+
+        <div id="mobile-menu" class="navbar__toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <button class="logout">logout</button>
+    </nav>
+    <div class="links_mobile" id="mobile_menu">
+        <a href="http://localhost:3000/library/bookshelf" target="_self">Books</a>
+        <a href="http://localhost:3000/library/borrowedBooks" target="_self">Borrowed Books</a>
+        <a href="http://localhost:3000/library/myPage" target="_self">My Page </a>
+    </div>
+
+    <main id="menu" class="main">
+        <div class="menuItem" id="catalogue">
+            <img src="../Images/library.jpg" alt="picture of a library">
+            <h3>Book Catalogue</h3>
+        </div>
+
+        <div class="menuItem" id="borrowed_books">
+            <img src="../Images/books.jpg" alt="picture of a stack of books with the top book opened">
+            <h3>Manage Books Borrowed</h3>
+        </div>
+
+        <div class="menuItem" id="add_books">
+            <img src="../Images/books.jpg" alt="picture of a stack of books with the top book opened">
+            <h3>Add books</h3>
+        </div>
+
+        <div class="menuItem" id="my_page">
+            <i class="fa-solid fa-user image"></i>
+            <h3>My Page</h3>
+        </div>
+        <div class="menuItem" id="users">
+            <i class="fa-solid fa-user image"></i>
+            <h3>Manage Users</h3>
+        </div>
+    </main>
+
+    <!-- Javascript Files -->
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- My File -->
+    <script src="../JAVASCRIPT/adminHome.js"></script>
+    <script src="../JAVASCRIPT/nav.js"></script>
+</body>
+
+</html>

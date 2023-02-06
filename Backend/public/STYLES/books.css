@@ -1,0 +1,151 @@
+* {
+    font-size: 16px;
+    color: #008E06;
+}
+
+article {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.library {
+    width: 95%;
+    color: #008E06 1px solid;
+}
+
+.lib_head {
+    background-color: #008E06;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#filters {
+    background-color: #fefefe;
+    border: 1px #008E06 solid;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#search_bar {
+    padding: 4px;
+    border: #008E06 1px solid;
+    outline: none;
+}
+
+#submit_search {
+    border-radius: 999px;
+    text-align: center;
+    padding: 4px;
+    border: #008E06 1px solid;
+}
+
+.books article {
+    font-size: 16px;
+}
+
+.books article h3 {
+    margin-top: 6px;
+}
+
+.books {
+    width: 100%;
+    margin: 10px;
+}
+
+.book_tile {
+    border: 1px #008E06 solid;
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 5px;
+    width: 98%;
+}
+
+.book_tile:hover {
+    background-color: #008E06;
+    transition: all ease-in-out 0.3s;
+}
+
+.book_tile:hover>article h3 {
+    color: #fefefe;
+    transition: all ease-in-out 0.3s;
+}
+
+.book_image {
+    width: 150px;
+    height: 180px;
+    border: 1px #008E06 solid;
+}
+
+.borrow {
+    width: 80px;
+    height: 35px;
+    margin: 8px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #008E06;
+    color: #fefefe;
+    border: #fefefe 1px solid;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.borrow:hover {
+    border: #008E06 1px solid;
+    color: #008E06;
+    background-color: #fefefe;
+    transition: 0.3s all ease-in-out;
+}
+
+.borrow:hover>i {
+    border: #008E06 1px solid;
+    color: #008E06;
+    transition: 0.3s all ease-in-out;
+}
+
+.borrow i {
+    color: #fefefe;
+    text-align: center;
+}
+
+.borrow:hover>i {
+    border: none;
+    transition: 0.4s all ease-in;
+}
+
+.nav_buttons {
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_btn {
+    width: 30px;
+    margin: 5px;
+    border: #008E06 1px solid;
+    background-color: #fefefe;
+    border-radius: 999px;
+}
+
+.nav_btn:hover,
+.nav_btn:hover>i {
+    border: #008E06 1px solid;
+    color: #fefefe;
+    background-color: #008E06;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+
+.nav_btn:hover>i {
+    transition: 0.2s all ease-in;
+}
+
+.pic {
+    width: 300px;
+    height: 500px;
+    border: #008E06 1px solid;
+}

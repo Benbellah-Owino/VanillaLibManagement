@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrowed Books</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/borrowed.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+
+        <div id="mobile-menu" class="navbar__toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <button class="logout">logout</button>
+    </nav>
+
+    <div class="links_mobile" id="mobile_menu">
+        <a href="http://localhost:3000/library/bookshelf" target="_self">Books</a>
+        <a href="http://localhost:3000/library/borrowedBooks" target="_self">Borrowed Books</a>
+        <a href="http://localhost:3000/library/myPage" target="_self">My Page </a>
+    </div>
+
+    <artical class="info">
+        This is where you can view all the bookes youv'e borrowed and the duration
+        left before returning the book.
+    </artical>
+    <br><br><br>
+
+    <section class="books">
+        <table class="bookst table table-striped" id="table">
+            <thead>
+                <tr>
+
+                    <th scope="col">Book Name</th>
+                    <th scope="col">To Return</th>
+                    <th scope="col">Days Left</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+
+                    <td>One Piece</td>
+                    <td>11-23-2002</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+
+                    <td>Naruto</td>
+                    <td>14-23-2002</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+
+                    <td>I want</td>
+                    <td>14-23-2002</td>
+                    <td>6</td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Script Tags -->
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://kit.fontawesome.com/42b8efcb5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/borrowOrders.js"></script>
+    <script src="../JAVASCRIPT/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/edit.css">
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+    </nav>
+
+    <!-- The Registration form -->
+
+    <div class="frm_divs title_div">
+        <label for="name" class="f_labels">Title</label>
+        <input type="text" name="name" id="title" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="teb">Edit</button>
+            <button class="save" id="tsb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs author_div">
+        <label for="author" class="f_labels">Author</label>
+        <input type="author" name="author" id="author" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="aeb">Edit</button>
+            <button class="save" id="asb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs genre_div">
+        <label for="genre" class="f_labels">Genre</label>
+        <input type="tel" name="genre" id="genre" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="geb">Edit</button>
+            <button class="save" id="gsb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs ISBN_div">
+        <label for="ISBN" class="f_labels">ISBN</label>
+        <input type="text" name="ISBN" id="ISBN" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="ieb">Edit</button>
+            <button class="save" id="isb">Save</button>
+        </div>
+    </div>
+    <div class="frm_divs pub_div">
+        <label for="pub" class="f_labels">Publisher</label>
+        <input type="text" name="pub" id="pub" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="peb">Edit</button>
+            <button class="save" id="psb">Save</button>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- <button type="submit" id="register_btn" class="primary_button">SAVE CHANGES</button> -->
+
+
+    <br>
+    <br>
+    <p id="message" class="message"></p>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/updateBook.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+//Creating user table in postgresql
+CREATE TABLE lib_user(
+	user_id serial PRIMARY KEY,
+	username VARCHAR (50) NOT NULL,
+	email VARCHAR(50) UNIQUE NOT NULL,
+	phone VARCHAR(20)NOT NULL,
+	gender VARCHAR(8),
+	books_borrowed SMALLINT DEFAULT 0,
+	user_role VARCHAR(10) NOT NULL,
+	created_at DATE SET DEFAULT CURRENT_DATE 
+);
+
+
+
+
+CREATE TABLE book (
+  book_id serial PRIMARY KEY,
+  genre VARCHAR(20),
+  title VARCHAR(50),
+  author VARCHAR(50),
+  publisher VARCHAR(50),
+  edition VARCHAR(15),
+  ISBN VARCHAR(25),
+  pages VARCHAR(8),
+  created_at DATE DEFAULT CURRENT_DATE
+);

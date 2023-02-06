@@ -1,0 +1,50 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+    color: #008E06;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 5px;
+}
+
+.menuItem {
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+    border: 1px #008E06 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    border-radius: 13px;
+}
+
+.menuItem img {
+    z-index: -1;
+}
+
+.menuItem i {
+    margin-top: 10px;
+    font-size: 100px;
+}
+
+.menuItem h3 {
+    position: absolute;
+    bottom: 2px;
+}

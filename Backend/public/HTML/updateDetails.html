@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/editUser.css">
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+    </nav>
+
+    <!-- The Registration form -->
+
+    <div class="frm_divs fname_div">
+        <label for="name" class="f_labels">Name</label>
+        <input type="text" name="name" id="name" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="neb">Edit</button>
+            <button class="save" id="nsb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs email_div">
+        <label for="email" class="f_labels">Email</label>
+        <input type="email" name="email" id="email" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="eeb">Edit</button>
+            <button class="save" id="esb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs email_div">
+        <label for="phone" class="f_labels">Contacts</label>
+        <input type="tel" name="phone" id="phone" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="ceb">Edit</button>
+            <button class="save" id="csb">Save</button>
+        </div>
+    </div>
+
+    <div class="frm_divs address_div">
+        <label for="addr" class="f_labels">Address</label>
+        <input type="text" name="addr" id="addr" class="input_form" disabled>
+        <div class="change_btn">
+            <button class="edit" id="aeb">Edit</button>
+            <button class="save" id="asb">Save</button>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- <button type="submit" id="register_btn" class="primary_button">SAVE CHANGES</button> -->
+
+
+    <br>
+    <br>
+    <p id="message" class="message"></p>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/updateUser.js"></script>
+</body>
+
+</html>

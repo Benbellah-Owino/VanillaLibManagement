@@ -1,0 +1,43 @@
+.head {
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 32px;
+}
+
+.r_form {
+    width: 95%;
+}
+
+.form_divs {
+    width: 98%;
+    height: 63px;
+    padding: 0;
+    margin: 3px;
+}
+
+.form_divs input {
+    width: 80%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: #008E06 1px solid;
+    height: 28px;
+}
+
+label {
+    margin: 4px;
+}
+
+select {
+    color: #008E06;
+    width: 150px;
+    accent-color: #008E06;
+}
+
+@media screen and (min-width: 766px) {
+    .form {
+        width: 40%;
+        border: #008E06 1px solid;
+    }
+}

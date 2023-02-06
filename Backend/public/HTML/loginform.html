@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/register.css">
+    <script src="https://kit.fontawesome.com/42b8efcb5a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+
+        <button class="logout">logout</button>
+    </nav>
+
+
+    <!-- The Registration form -->
+    <form class="form r_form" id="l_form">
+
+        <div class="form_divs email_div">
+            <label for="email" class="f_labels">Email</label>
+            <input type="email" name="email" id="email" class="input_form">
+        </div>
+
+        <div class="form_divs password_div">
+            <label for="pass" class="f_labels">Password</label>
+            <input type="password" name="password" id="pass" class="input_form">
+        </div>
+        <br>
+
+        <h3 class="info">This is a place holder</h3>
+
+        <br><br>
+
+        <button type="submit" id="register_btn" class="primary_button">Login</button>
+
+    </form>
+
+    <br>
+    <p class="message">Succesfull</p>
+    <br>
+
+    <p>First time here? <a href="http://localhost:3000/library/forgotPassword">Click this link to be a member of our
+            library</a></p>
+    <p>First time here? <a href="http://localhost:3000/library/register">Click this link to be a member of our
+            library</a></p>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/login.js"></script>
+    <script src="../JAVASCRIPT/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="../STYLES/general.css">
+    <link rel="stylesheet" href="../STYLES/books.css">
+
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <i class="fa-solid fa-book"></i>
+            <h2>Library</h2>
+        </span>
+
+        <div id="mobile-menu" class="navbar__toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <button class="logout">logout</button>
+    </nav>
+
+    <div class="links_mobile" id="mobile_menu">
+        <a href="http://localhost:3000/library/bookshelf" target="_self">Books</a>
+        <a href="http://localhost:3000/library/borrowedBook" target="_self">Borrowed Books</a>
+        <a href="http://localhost:3000/library/myPage" target="_self">My Page </a>
+    </div>
+
+    <article class="info">
+        This is essentially the library section. Select one or more books to add top your form
+        cart then you can confirm your purchase.
+    </article>
+    <br><br>
+
+    <section class="library container">
+
+        <header class="lib_head">
+            <button id="filters">filters</button>
+            <div class="search">
+                <input type="search" name="search" id="search_bar" placeholder="enter name of book">
+                <button id="submit_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </header>
+
+
+        <section class="books container" id="bookshelf">
+
+            <!-- <div class="book_tile container">
+                <img src="" alt="" class="book_image">
+                <article class="book_info">
+
+                    <h3 class="element">Title: One Piece</h3>
+                    <h3 class="element">Author: Eichiro Oda</h3>
+                    <h3 class="element">Genre: Eichiro Oda</h3>
+                    <h3 class="element">Edition: 1</h3>
+                    <h3 class="element">Pages: 1043</h3>
+
+                    <button class="borrow"><i class="fa-solid fa-cart-shopping"></i></button>
+
+                </article>
+            </div> -->
+
+        </section>
+        <div class="nav_buttons container">
+            <button class="preve nav_btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next nav_btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/42b8efcb5a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../JAVASCRIPT/bookslist.js"></script>
+    <script src="../JAVASCRIPT/nav.js"></script>
+</body>
+
+</html>

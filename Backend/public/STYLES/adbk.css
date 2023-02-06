@@ -1,0 +1,77 @@
+.body {
+    width: 100vw;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input_field {
+    width: 90%;
+    height: 50px;
+
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input_field label {
+    width: 35%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.input_field input {
+    width: 65%;
+    height: 50%;
+    margin-right: 10px;
+    outline: none;
+}
+
+#submit {
+    width: 120px;
+}
+
+@media screen and (min-width: 766px) {
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .input_field {
+        width: 70%;
+        height: 50px;
+
+        margin: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .input_field label {
+        width: 50%;
+        text-align: right;
+        margin-right: 120px;
+    }
+
+    .input_field input {
+        width: 50%;
+        height: 60%;
+        margin-right: 10px;
+        outline: none;
+    }
+
+    #submit {
+        width: 120px;
+    }
+}
