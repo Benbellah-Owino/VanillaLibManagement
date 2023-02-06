@@ -17,16 +17,19 @@
             <h2>Library</h2>
         </span>
 
-        <div id="mobile-menu" class="navbar__toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        <div class="nav_2">
+            <div id="mobile-menu" class="navbar__toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
 
-        <button class="logout">logout</button>
+            <button class="logout">logout</button>
+        </div>
     </nav>
 
     <div class="links_mobile" id="mobile_menu">
+        <a href="http://localhost:3000/library/home" target="_self">Home</a>
         <a href="http://localhost:3000/library/bookshelf" target="_self">Books</a>
         <a href="http://localhost:3000/library/borrowedBooks" target="_self">Borrowed Books</a>
         <a href="http://localhost:3000/library/myPage" target="_self">My Page </a>
@@ -34,8 +37,6 @@
 
 
     <main class="main container">
-
-        <img src="" alt="A photo of the user" class="myPicture">
 
         <section class="details container">
             <div class="name detail_tiles">
@@ -64,6 +65,10 @@
                 <h3 class="data" id="borrows">Library customer</h3>
             </div>
         </section>
+
+        <br><br>
+
+        <button id="edit" class="primary_button">EDIT DETAILS</button>
     </main>
 
     <!-- Javascript Section -->

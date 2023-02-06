@@ -4,6 +4,11 @@ const phone = document.getElementById("phone")
 const gender = document.getElementById("gender")
 const role = document.getElementById("role")
 const numberOfBorrows = document.getElementById("borrows")
+const edit = document.getElementById("edit")
+
+edit.addEventListener("click", () => {
+    window.open("/library/updateMyPage", "_self")
+})
 
 axios.get(`http://localhost:3000/lib/v1/user/userDetails`)
     .then((result) => {

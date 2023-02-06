@@ -18,5 +18,8 @@ menu.addEventListener("click", function () {
 logout.addEventListener("click", () => {
     localStorage.setItem("loggedIn", "false")
     localStorage.removeItem("role")
-    alert("You are getting logged out")
+    axios.get(`http://localhost:3000/library/logout`).then((result) => {
+        alert(result)
+    })
+
 })

@@ -5,6 +5,7 @@
     justify-content: start;
     align-items: center;
     width: 98%;
+    margin: 10px
 }
 
 .input_form,
@@ -45,4 +46,11 @@
     background-color: #008E06;
     color: #fefefe;
     transition: all ease-in-out 0.3s;
+}
+
+@media screen and (min-width: 766px) {
+    .frm_divs {
+        width: 40%;
+        border: #008E06 1px solid;
+    }
 }

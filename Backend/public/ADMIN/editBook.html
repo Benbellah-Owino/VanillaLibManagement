@@ -8,6 +8,7 @@
     <title>Register</title>
     <link rel="stylesheet" href="../STYLES/general.css">
     <link rel="stylesheet" href="../STYLES/edit.css">
+    <script src="https://kit.fontawesome.com/42b8efcb5a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,7 +17,25 @@
             <i class="fa-solid fa-book"></i>
             <h2>Library</h2>
         </span>
+
+        <div class="nav_2">
+            <div id="mobile-menu" class="navbar__toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <button class="logout">logout</button>
+        </div>
     </nav>
+
+    <div class="links_mobile" id="mobile_menu">
+        <a href="http://localhost:3000/library/home" target="_self">Home</a>
+        <a href="http://localhost:3000/library/bookshelf" target="_self">Books</a>
+        <a href="http://localhost:3000/library/borrowedBooks" target="_self">Borrowed Books</a>
+        <a href="http://localhost:3000/library/myPage" target="_self">My Page </a>
+    </div>
+
 
     <!-- The Registration form -->
 
@@ -76,6 +95,7 @@
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../JAVASCRIPT/updateBook.js"></script>
+    <script src="../JAVASCRIPT/nav.js"></script>
 </body>
 
 </html>

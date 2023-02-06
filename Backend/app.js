@@ -59,7 +59,10 @@ app.get("/library/allborrowedBooks", (req, res) => {
 })
 
 
-
+app.get("/library/logout", (req, res) => {
+    res.clearCookie("authtoken")
+    res.send("Logged Out Succesfully")
+})
 
 
 app.listen(3000, async () => {

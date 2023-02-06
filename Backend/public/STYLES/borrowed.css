@@ -1,6 +1,10 @@
 body {
     width: 100vw;
+}
 
+.links_mobile a{
+    color: #fefefe;
+    text-decoration: none;
 }
 
 .books {
