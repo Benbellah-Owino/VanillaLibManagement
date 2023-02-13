@@ -33,6 +33,7 @@ form.addEventListener("submit", (e) => {
         axios.post("http://localhost:3000/lib/v1/book/createBook", book)
             .then((response) => {
                 console.log(response)
+                window.open("http://localhost:3000/library/bookshelf", "_self");
             }).catch((error) => {
                 console.log(error)
             })

@@ -56,6 +56,7 @@ function returnBook(e) {
     axios.post("http://localhost:3000/lib/v1/book/returnBook", { book: ids[1], id: ids[0] })
         .then((response) => {
             console.log(response.data)
+            location.reload();
         }).catch(err => console.log(err))
 }
 

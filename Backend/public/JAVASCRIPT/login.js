@@ -13,6 +13,8 @@ form.addEventListener("submit", (e) => {
         password: passField.value,
     }
 
+    console.log(user)
+
     axios.post("http://localhost:3000/lib/v1/user/loginUser", user)
         .then((response) => {
             const res = response.data
