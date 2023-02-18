@@ -21,6 +21,9 @@ app.use("/lib/v1/user", userRouter)
 app.use("/lib/v1/book", bookRouter)
 
 //Frontend Routes
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/HTML/landing.html")
+})
 app.get("/library/login", (req, res) => {
     res.sendFile(__dirname + "/public/HTML/loginform.html")
 })
