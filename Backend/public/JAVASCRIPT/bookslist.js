@@ -1,8 +1,92 @@
 const section = document.getElementById("bookshelf")
 const search = document.getElementById("search_bar")
+let results
 let borrow
 let tiles
+let empt = false
+let booklist = []
 
+//Function to create the search results div
+function createResults(books) {
+    const node = document.createElement("div")
+    node.classList.add("results")
+    node.classList.add("container")
+
+    node.id = "results"
+
+    // List the books in the results
+    books.forEach(book => {
+        const link = document.createElement("a")
+        link.href = `http://localhost:3000/library/borrowBook?id=${book.book_id}`
+        link.textContent = `${book.title}`
+        node.appendChild(link)
+    })
+
+    document.body.appendChild(node)
+    console.log(node)
+
+    return node
+}
+
+//Function to show or hide the search results
+function hide_showR(empty) {
+    console.log(empty)
+
+    if (empty == false) {
+        results.style.display = "flex"
+
+    } else if (empty == true) {
+        results.style.display = "none"
+    }
+}
+
+//Function to position the search results according to screen size. Though it's not dynamic
+function addResultBar() {
+    var rect = search.getBoundingClientRect();
+    let x = rect.right
+    let y = rect.top
+    x -= 210
+    y += 40
+
+    results.style.left = `${x}px`
+    results.style.top = `${y}px`
+
+}
+
+
+// Function to check if the search baqr is empty
+function isEmpty(str) {
+    return (!str || str.length === 0);
+}
+
+search.addEventListener("keyup", () => {
+
+    if (isEmpty(search.value)) {
+        empt = true
+        hide_showR(empt)
+        console.log(search.value + empt)
+        return
+    } else {
+        if (results) {
+            document.body.removeChild(results)
+        }
+        empt = false
+
+        let books = booklist.filter((book) => {
+            let title = book.title.toLowerCase()
+            let searchVal = search.value.toLowerCase()
+
+            return title.includes(searchVal)
+        })
+        results = createResults(books);
+
+
+        addResultBar()
+        hide_showR(empt)
+    }
+})
+
+//Function to navigate to book borrowing page
 function borrowBook(e) {
     let btnId = e.target.id;
     console.log(btnId)
@@ -10,16 +94,6 @@ function borrowBook(e) {
         window.open(`/library/borrowBook?id=${btnId}`)
     }
 }
-
-search.addEventListener("change", () => {
-    console.log(1)
-    axios.get(`http://localhost:3000/lib/v1/book/bookquery?letters=${search.value}`)
-        .then(function (response) {
-            let books = response.data.data
-            books.forEach(book => { console.log(books) })
-        })
-})
-
 
 
 function editBook(e) {
@@ -37,6 +111,8 @@ function populate() {
     axios.get('http://localhost:3000/lib/v1/book/getBooks')
         .then(function (response) {
             let books = response.data.data
+            booklist = response.data.data
+
             books.forEach(book => {
 
                 const parent = document.createElement("div")
@@ -78,7 +154,6 @@ function populate() {
                 article.appendChild(button)
 
                 parent.appendChild(article);
-                console.log(parent)
                 section.append(parent);
             });
 
